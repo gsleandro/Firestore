@@ -1,0 +1,39 @@
+
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Login</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="hero" style="height: 100vh !important;">
+  <div class="login-container">
+    <h1 style='font-size: 3rem; font-weight: bold;'>Carregar Arquivos</h1>
+
+    <form id="loginForm " class="card w-96 bg-base-100 shadow-xl card-body">
+      <label for="email">Email:</label>
+      <input type="email" class="input input-bordered input-primary w-full max-w-xs" id="email" name="email" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" class="input input-bordered input-primary w-full max-w-xs" id="password" name="password" required>
+
+      <button type="button" class="btn btn-outline btn-primary" onclick="loginWithEmail()">Login Email/Senha</button>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+      <button type="button" class="btn btn-outline google-login-button"  onclick="loginWithGoogle()">    <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>      <p class="btn-text" type="button" ><b>Entrar com Google</b></p></button>
+
+      </div>
+</div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+  <script src="js/fbconfig.js" ></script> 
+  <script src="js/login.js"></script>
+</body>
+</html>
